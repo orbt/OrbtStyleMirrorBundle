@@ -6,11 +6,11 @@
 
     <!--
     <parameters>
-        <parameter key="zth_me_resource_handler.example.class">ZthMe\Bundle\ResourceHandlerBundle\Example</parameter>
+        <parameter key="anu_resource_handler.example.class">ANU\Bundle\ResourceHandlerBundle\Example</parameter>
     </parameters>
 
     <services>
-        <service id="zth_me_resource_handler.example" class="%zth_me_resource_handler.example.class%">
+        <service id="anu_resource_handler.example" class="%anu_resource_handler.example.class%">
             <argument type="service" id="service_id" />
             <argument>plain_value</argument>
             <argument>%parameter_name%</argument>
