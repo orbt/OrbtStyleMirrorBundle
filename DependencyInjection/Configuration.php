@@ -1,6 +1,6 @@
 <?php
 
-namespace ANU\Bundle\ResourceHandlerBundle\DependencyInjection;
+namespace Orbt\Bundle\ResourceHandlerBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
@@ -18,7 +18,7 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('anu_resource_handler');
+        $rootNode = $treeBuilder->root('orbt_resource_handler');
 
         // Here you should define the parameters that are allowed to
         // configure your bundle. See the documentation linked above for

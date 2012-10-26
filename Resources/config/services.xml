@@ -6,11 +6,11 @@
 
     <!--
     <parameters>
-        <parameter key="anu_resource_handler.example.class">ANU\Bundle\ResourceHandlerBundle\Example</parameter>
+        <parameter key="orbt_resource_handler.example.class">Orbt\Bundle\ResourceHandlerBundle\Example</parameter>
     </parameters>
 
     <services>
-        <service id="anu_resource_handler.example" class="%anu_resource_handler.example.class%">
+        <service id="orbt_resource_handler.example" class="%orbt_resource_handler.example.class%">
             <argument type="service" id="service_id" />
             <argument>plain_value</argument>
             <argument>%parameter_name%</argument>
