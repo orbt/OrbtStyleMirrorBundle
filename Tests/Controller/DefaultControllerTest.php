@@ -1,6 +1,6 @@
 <?php
 
-namespace Orbt\Bundle\ResourceHandlerBundle\Tests\Controller;
+namespace Orbt\Bundle\StyleMirrorBundle\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 

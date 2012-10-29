@@ -6,11 +6,11 @@
 
     <!--
     <parameters>
-        <parameter key="orbt_resource_handler.example.class">Orbt\Bundle\ResourceHandlerBundle\Example</parameter>
+        <parameter key="orbt_style_mirror.example.class">Orbt\Bundle\StyleMirrorBundle\Example</parameter>
     </parameters>
 
     <services>
-        <service id="orbt_resource_handler.example" class="%orbt_resource_handler.example.class%">
+        <service id="orbt_style_mirror.example" class="%orbt_style_mirror.example.class%">
             <argument type="service" id="service_id" />
             <argument>plain_value</argument>
             <argument>%parameter_name%</argument>
