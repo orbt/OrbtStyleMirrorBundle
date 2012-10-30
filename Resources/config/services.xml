@@ -8,11 +8,13 @@
         <parameter key="orbt_style_mirror.css.aggregator.class">Orbt\StyleMirror\Css\Aggregator</parameter>
         <parameter key="orbt_style_mirror.resource.single_use_queue.class">Orbt\StyleMirror\Resource\SingleUseQueue</parameter>
         <parameter key="orbt_style_mirror.css.scanner.class">Orbt\StyleMirror\Css\ResourceScanner</parameter>
+        <parameter key="orbt_style_mirror.aggregate_prefix" />
     </parameters>
 
     <services>
         <service id="orbt_style_mirror.css.aggregator" class="%orbt_style_mirror.css.aggregator.class%">
             <argument type="service" id="orbt_resource_mirror.mirror" />
+            <argument>%orbt_style_mirror.aggregate_prefix%</argument>
         </service>
         <service id="orbt_style_mirror.resource.single_use_queue" class="%orbt_style_mirror.resource.single_use_queue.class%" />
         <service id="orbt_style_mirror.css.scanner" class="%orbt_style_mirror.css.scanner.class%">

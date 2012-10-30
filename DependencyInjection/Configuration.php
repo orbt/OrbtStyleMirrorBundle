@@ -21,6 +21,7 @@ class Configuration implements ConfigurationInterface
         $rootNode = $treeBuilder->root('orbt_style_mirror');
 
         $rootNode->children()
+            ->scalarNode('aggregate_prefix')->defaultValue('style_')->end()
             ->booleanNode('fetch_linked_resource')->defaultFalse()->end();
 
         return $treeBuilder;

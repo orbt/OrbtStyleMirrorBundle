@@ -28,5 +28,7 @@ class OrbtStyleMirrorExtension extends Extension
         if (!empty($config['fetch_linked_resource'])) {
             $loader->load('linked_fetcher.xml');
         }
+
+        $container->setParameter('orbt_style_mirror.aggregate_prefix', $config['aggregate_prefix']);
     }
 }
