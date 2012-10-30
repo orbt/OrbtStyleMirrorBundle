@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <parameters>
+        <parameter key="orbt_style_mirror.css.linked_fetcher.class">Orbt\StyleMirror\Css\Aggregator</parameter>
+        <parameter key="orbt_style_mirror.resource.single_use_queue.class">Orbt\StyleMirror\Resource\SingleUseQueue</parameter>
+    </parameters>
+
+    <services>
+        <service id="orbt_style_mirror.css.linked_fetcher" class="%orbt_style_mirror.css.linked_fetcher.class%">
+            <tag name="orbt_resource_mirror.resource_subscriber" />
+            <argument type="service" id="orbt_style_mirror.css.scanner" />
+            <argument type="service" id="orbt_resource_mirror.mirror" />
+        </service>
+    </services>
+</container>

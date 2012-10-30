@@ -4,17 +4,19 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
-    <!--
     <parameters>
-        <parameter key="orbt_style_mirror.example.class">Orbt\Bundle\StyleMirrorBundle\Example</parameter>
+        <parameter key="orbt_style_mirror.css.aggregator.class">Orbt\StyleMirror\Css\Aggregator</parameter>
+        <parameter key="orbt_style_mirror.resource.single_use_queue.class">Orbt\StyleMirror\Resource\SingleUseQueue</parameter>
+        <parameter key="orbt_style_mirror.css.scanner.class">Orbt\StyleMirror\Css\ResourceScanner</parameter>
     </parameters>
 
     <services>
-        <service id="orbt_style_mirror.example" class="%orbt_style_mirror.example.class%">
-            <argument type="service" id="service_id" />
-            <argument>plain_value</argument>
-            <argument>%parameter_name%</argument>
+        <service id="orbt_style_mirror.css.aggregator" class="%orbt_style_mirror.css.aggregator.class%">
+            <argument type="service" id="orbt_resource_mirror.mirror" />
+        </service>
+        <service id="orbt_style_mirror.resource.single_use_queue" class="%orbt_style_mirror.resource.single_use_queue.class%" />
+        <service id="orbt_style_mirror.css.scanner" class="%orbt_style_mirror.css.scanner.class%">
+            <argument type="service" id="orbt_style_mirror.resource.single_use_queue" />
         </service>
     </services>
-    -->
 </container>

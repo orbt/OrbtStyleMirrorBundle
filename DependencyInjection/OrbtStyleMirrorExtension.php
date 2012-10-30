@@ -24,5 +24,9 @@ class OrbtResourceHandlerExtension extends Extension
 
         $loader = new Loader\XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.xml');
+
+        if (!empty($config['fetch_linked_resource'])) {
+            $loader->load('linked_fetcher.xml');
+        }
     }
 }
