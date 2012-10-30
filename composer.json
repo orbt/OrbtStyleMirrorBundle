@@ -1,0 +1,22 @@
+{
+    "name": "orbt/style-mirror-bundle",
+    "type": "library",
+    "description": "Symfony dependency injection bundle for the Style Mirror library.",
+    "keywords": [],
+    "homepage": "http://github.com/orbt/OrbtStyleMirrorBundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Taihao Zhang",
+            "email": "jason@zth.me"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "orbt/resource-mirror": "dev-master"
+    },
+    "autoload": {
+        "psr-0": { "Orbt\\Bundle\\StyleMirrorBundle\\": "" }
+    },
+    "target-dir": "Orbt/Bundle/StyleMirrorBundle"
+}
